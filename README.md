@@ -1,6 +1,17 @@
 # Dockerlibrary
 
-This library is for both node as well for python 
+docker build --tag 17596/blockchainnode .
 
+docker run -p 49160:8080 -d  17596/blockchainnode
 
-1.The steps are in Respective code library
+docker ps
+
+curl -i localhost:49160
+
+docker stop container-id
+
+docker run -p 49160:8080   17596/blockchainnode
+
+open 
+http://localhost:49160/
+
